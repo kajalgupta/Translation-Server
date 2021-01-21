@@ -1,0 +1,35 @@
+{
+    "name": "translationcaching",
+    "version": "1.0.0",
+    "description": "Web Server that exposes an API to translate a text",
+    "main": "server.js",
+    "scripts": {
+        "start": "node start/start.js",
+        "test": "jest",
+        "test:watch": "jest --watch"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@google-cloud/translate": "^6.1.0",
+        "aws-sdk": "^2.828.0",
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "express-promise-router": "^4.0.1",
+        "fs": "0.0.1-security",
+        "google-translate": "^3.0.0",
+        "google-translate-api": "^2.3.0",
+        "morgan": "^1.10.0",
+        "mysql": "^2.18.1",
+        "parse-error": "^0.2.0"
+    },
+    "devDependencies": {
+        "eslint": "^7.17.0",
+        "eslint-config-google": "^0.14.0",
+        "jest": "^26.6.3",
+        "nodemon": "^2.0.7",
+        "supertest": "^6.1.1"
+    }
+}
