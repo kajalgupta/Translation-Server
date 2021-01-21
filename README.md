@@ -24,6 +24,7 @@ NOTE: Do not forget to set IDs and SECRETs in.env file.
 - ALTER TABLE MyTable MODIFY MyColumn TEXT CHARACTER SET utf8 COLLATE utf8_general_ci 
 # Running tests
 Testing through jest framework
+testscript is stored in _test_ directory in translateText.spec.js
 command - npm run test
 
 ![Testing Using Jest!](/assets/testingsnapshot.png "Tested")
@@ -46,4 +47,4 @@ command - npm run test
 
 # Further Improvements
 - Can use redis with MySQL, or with a nosql database like mongodb would be a good choice for  faster response time
-- Here the translation is done sentence by sentence, if it could be converted from word to word then many of the translations would be saved
+- Here the translation is done sentence by sentence, if it could be converted to 'word to word' then many of the translations would be saved.
