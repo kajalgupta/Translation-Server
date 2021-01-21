@@ -14,6 +14,14 @@ Then visit http://localhost:3000/
 
 NOTE: Do not forget to set IDs and SECRETs in.env file. 
 
+# Setting up MySQL Database Connection 
+![Database!](/assets/settingupDBconnection.png "db")
+
+# Database Schema
+![Database!](/assets/database.png "db")
+- If you have initially declared inputText & translatedText column as varchar, convert them to utf-8 charset text type using the following 2 commands( as they will store multilingual text)
+- ALTER TABLE MyTable MODIFY MyColumn BINARY
+- ALTER TABLE MyTable MODIFY MyColumn TEXT CHARACTER SET utf8 COLLATE utf8_general_ci 
 # Running tests
 Testing through jest framework
 command - npm run test
@@ -36,3 +44,6 @@ command - npm run test
 - Next time, if you will hit this same above request, then you will notice difference in response time as this time it will be coming from cache(mysql db)
 ![Snapshot!](/assets/HittingCacheInsteadOfHittingTranslateApi.png "Hitting Cache")
 
+# Further Improvements
+- Can use redis with MySQL, or with a nosql database like mongodb would be a good choice for  faster response time
+- Here the translation is done sentence by sentence, if it could be converted from word to word then many of the translations would be saved
