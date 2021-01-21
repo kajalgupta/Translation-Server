@@ -38,7 +38,7 @@ connection.connect(function(err) {
 
 module.exports = connection;
 
-/*repo
+/*
  1.
 node connect.js by this ->
                     Connected to the MySQL server.
