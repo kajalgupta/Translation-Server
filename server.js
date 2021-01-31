@@ -19,8 +19,8 @@ app.use(cors());
 var AWS = require("aws-sdk");
 const SESConfig = {
     //apiVersion: "2010-12-01",
-    accessKeyId: process.env.AWS_ACCESS_KEY_ID, //AKIARST7VXZTQZX74LM7
-    accessSecretKey: process.env.AWS_SECRET_ACCESS_KEY, //"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",
+    accessKeyId: process.env.AWS_ACCESS_KEY_ID, 
+    accessSecretKey: process.env.AWS_SECRET_ACCESS_KEY, 
     region: "us-east-1"
 }
 AWS.config.update(SESConfig);
